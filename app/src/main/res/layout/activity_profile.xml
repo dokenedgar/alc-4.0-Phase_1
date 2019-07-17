@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".profileActivity"
+        >
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img3"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_picture"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="monospace"
+            android:text="Doken Edgar"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <View style="@style/Divider"
+            android:layout_below="@id/profile_name"
+            android:id="@+id/divider"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="monospace"
+            android:text="Track: Android"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Country: Nigeria"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Email: dokenedgarjr@gmail.com"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Phone Number: 08162159452"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
